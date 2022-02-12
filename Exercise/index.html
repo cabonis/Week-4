@@ -2,19 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Form </title>
+    <title>Sample Form</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<h3>
-    Form Design Exercise:
-</h3>
-<p style="font-family: Helvetica;font-size: medium">
-    Disregarding the style of the page: <br>
-    <a href="https://forms.gle/qjz8MKR4YXWkWCVLA">https://forms.gle/qjz8MKR4YXWkWCVLA</a>
-</p>
-<p style="font-family: Helvetica;font-size: medium">
-    Try to replicate the format of the form in the page.<br>
-    Make use of "Label", "Input" and "Table".
-</p>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>
+                    <h1>Sample Form</h1>
+                    <label>Choose a topic and research interest for the individual visualization project.</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Email</h3>
+                    <input type="text" id="email" placeholder="Your email" class="answer-half" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>First Name</h3>
+                    <input type="text" id="firstName" placeholder="Your first name" class="answer-half" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Last Name</h3>
+                    <input type="text" id="lastName" placeholder="Your last name" class="answer-half" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Research Interest (list at least 3)</h3>
+                    <input type="text" id="researchInterest" placeholder="Your answer" class="answer-full" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Project Title - (e.g. income vs education US Census)</h3>
+                    <input type="text" id="projTitle" placeholder="Your answer" class="answer-full" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Top Skills</h3>
+                    <ul>
+                        <li>
+                            <label><input type="checkbox" id=skill1 /><span>SQL</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill2 /><span>Python programming</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill3 /><span>Matlab</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill4 /><span>D3js and Javascript</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill5 /><span>C# VB.net</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill6 /><span>PHP</span></label>
+                        </li>
+                        <li>
+                            <label> <input type="checkbox" id=skill7 /><span>Node.JS</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill8 /><span>Web design tools (e.g. Wordparess)</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill9 /><span>HTML and CSS</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill10 /><span>Excel</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill11 /><span>PowerBI</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill12 /><span>Tableau</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skill13 /><span>Option 13</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id=skillOther /><span>Other:</span><input type="text" id="skillOtherValue" placeholder="Your answer" class="answer-half"></label>                            
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Suggestions or Questions</h3>
+                    <input type="text" id="suggestions" placeholder="Your answer" class="answer-full" />
+                </td>
+            </tr>
+            <tr>
+                <td class="submitArea">
+                    <input type="submit" value="Submit" class="submit">
+                    <input type="button" value="Clear form" class="clear">
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
