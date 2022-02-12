@@ -1,0 +1,74 @@
+body{
+    background-color:lightgrey;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+table, td{
+    width: 75%;
+    border-spacing: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{   
+    border-radius: 2mm;
+    background-color: white;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+[class*="answer-"]{
+    outline: 0;
+    border-width: 0 0 1px;
+    margin: 2px;
+}
+
+[class*="answer-"]:focus{
+    border-width: 0 0 2px;
+    border-color: blue;
+}
+
+.answer-half {
+    width: 50%;
+}
+
+.answer-full {
+    width: 100%;
+}
+
+.submitArea{
+    background-color:lightgrey;
+    padding: 2px;
+}
+
+.submit{
+    background-color:blueviolet;
+    color:white;
+    width: 90px;
+    height: 35px;
+    border-radius: 1mm;
+    border-style:solid;
+}
+
+.submit:hover{
+    border-color: white;
+}
+
+.clear{
+    color: blueviolet;
+    background-color:lightgrey;
+    border-color: lightgrey;
+    float: right;
+    padding: 10px;
+    border-radius: 1mm;
+    border-style:solid;
+}
+
+.clear:hover{
+    border-color: blueviolet;    
+}
